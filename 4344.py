@@ -7,7 +7,7 @@ for i in range(C):
         sum+=score[j+1]
     avg=sum/score[0]
     for z in range(score[0]):
-        if score[z+1]<avg:
+        if score[z+1]>avg:
             count+=1
     a=(count/score[0])*100
-    print(format(a,".3f"),'%')
+    print(format(a,".3f")+'%')
